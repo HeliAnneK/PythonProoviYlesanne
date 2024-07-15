@@ -1,0 +1,24 @@
+"""
+    You are given a list with strings in it. The score of a string is defined as the
+    arithmetic average of the unicode values for each character.
+    Return the string with the biggest score.
+    If there are multiple strings with the best score, return the string that appears first in the list.
+    If the list is empty, return "".
+
+    For example, you are given list ["I", "love", "Python"]
+    "I" score is 73 (I -> 73) -> 73 / 1 = 73
+    "love" score is 109.5 (l -> 108, o -> 111, v -> 118, e -> 101) -> (108 + 111 + 118 + 101) / 4 = 109.5
+    "Python" score is 107 (P -> 80, y -> 121, t -> 116, h -> 104, o -> 111, n -> 110) / 6 = 107
+
+    Therefore, the answer should be "love", because it has the biggest score
+
+    Example:
+        string_with_best_score(["ABC", "abc"]) -> "abc"
+        string_with_best_score(["Hello", "Python"]) -> "Python"
+        string_with_best_score(["aaa", "yyy", "bbb"]) -> "yyy"
+
+    Hint:
+    For this exercise using ord(char) is encouraged. Method ord(char) returns
+    the unicode value of the character.
+    For example: ord('A') -> 65
+"""
